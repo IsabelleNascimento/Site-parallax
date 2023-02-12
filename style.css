@@ -1,0 +1,106 @@
+
+section{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url(img-parallax/mao-ver.jpg);
+    background-position: center;
+    height: 600px;
+}
+section:nth-of-type(3){
+    background-image: url(img-parallax/eolica.jpg);
+    background-position: center;
+    height: 600px;
+}
+section:nth-of-type(5){
+    background-image: url(img-parallax/arvores.jpg);
+    background-position: center;
+    height: 600px;
+}
+section:nth-of-type(7){
+    background-image: url(img-parallax/lampada.jpg);
+    background-position: center;
+    height: 600px;
+}
+
+.escrita-mao{
+    animation-duration: 3s;
+    animation-name: slidein;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 15em;
+    padding-right: 4em;
+}
+
+.escrita-principal{
+    background-color: #398C62;
+    padding: 1em;
+    border-radius: 5px;
+    color: #E5E6E1;
+    line-height: 1.5rem;
+}
+.escrita-comum{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 7em;
+    justify-content: space-around;
+}
+.btn-p{
+    padding: 2em; 
+    
+}
+.btn{
+    padding: 1em;
+    background-color: #398C62;
+    border-radius: 5px;
+    border: solid #e5e6e14f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.escrita-img{
+    padding: 15em;
+    text-align: center;
+}
+.titulo-img{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    line-height: 2rem;
+    background-color: #e5e6e152;
+    border-radius: 10px;
+}
+.final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-incons{
+    width: 5em;
+    padding: 1em;
+    
+}
+.p-redes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/* @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+} */

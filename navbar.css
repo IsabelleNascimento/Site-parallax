@@ -1,0 +1,91 @@
+.menu{
+    background-color: #398C62;
+    position: fixed;
+    width: 100vw;
+}
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 9vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }  
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+}
+
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: white;
+        color: #398C62;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active{
+        transform: translateY(0);
+    }
+    .menu{
+        z-index: 1000;
+    
+    }
+    .change,
+    .line{
+        background-color: white;
+    }
+    .change{
+        display: block;
+    }
+
+    .change .mobile-menu{
+        background-color: white;
+        width: 550px;
+        height: 540px;
+    }
+}
